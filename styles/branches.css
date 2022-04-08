@@ -3,7 +3,8 @@
     --branch-letters-color: whitesmoke;
     --margin-container: 2%;
     --branch-card-border-radius: 3%;
-    --branch-card-box-shadow: 5px 5px 10px #0F0F0F;;
+    --branch-card-box-shadow: 5px 5px 10px #0F0F0F;
+    ;
 }
 
 .branches-container {
@@ -44,30 +45,23 @@
     font-family: Poppins, sans-serif;
     text-align: justify;
     margin: 4%;
-    font-size: 1.2em;;
+    font-size: 1.2em;
 }
 
 h1 {
     color: var(--title-color);
     font-family: Poppins, sans-serif;
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 1.5em;
     position: relative;
     display: block;
     margin: 0 auto 2% auto;
-    width: 25%;
+    width: 8em;
     text-align: center;
     border-bottom: 1px solid var(--letters-color);
-}
-
-@media(min-width: 960px) {
-    h1 {
-        width: 12%;
-    }
 }
 
 #space {
     width: 100%;
     height: 2%;
 }
-

@@ -91,4 +91,11 @@
     .signUp {
         width: 90%;
     }
+    .signUp-buttons {
+        width: 80%;
+    }
+    .signUp input[type="email"],
+    .signUp input[type="text"] {
+        width: 60%;
+    }
 }

@@ -141,12 +141,14 @@
 }
 
 @media (max-width: 550px) {
-    .delivery-container {
-        width: calc(var(--delivery-width) + 20%);
-        font-size: 0.8em;
+    .message p {
+        font-size: 1em;
     }
-    .delivery-resume div {
-        width: calc(var(--delivery-width) + 20%);
+}
+
+@media (min-width: 550px) and (max-width: 930px) {
+    .message p {
+        font-size: 1.1em;
     }
 }
 
@@ -170,14 +172,10 @@
         width: 100%;
     }
     .message {
-        width: 60%;
-    }
-    .message p {
-        margin: 6%;
-        font-size: 1.1em;
+        width: 70%;
     }
     #payment-button {
-        width: 60%;
+        width: 65%;
         padding: 0.4em;
     }
 }
