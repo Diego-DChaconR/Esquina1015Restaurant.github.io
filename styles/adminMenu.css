@@ -1,0 +1,39 @@
+body {
+    padding-top: 8em;
+}
+
+.admin-menu {
+    width: 30em;
+    height: 2.5em;
+    background-color: ghostwhite;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.admin-menu-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.admin-menu-list li {
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.admin-menu-list a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.admin-menu-list a:hover {
+    padding: 8.5px;
+    border-radius: 0 0 5px 5px;
+    background-color: var(--letters-color);
+}
