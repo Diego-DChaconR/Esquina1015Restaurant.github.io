@@ -71,7 +71,7 @@ legend {
 }
 
 .reserv-form-buttons input {
-    width: 30%;
+    width: 8em;
 }
 
 .reserv-form-buttons input[type="submit"] {
@@ -122,5 +122,12 @@ legend {
     }
     .persons-form input {
         width: calc(var(--reserv-form-input-width) - 45%);
+    }
+    .reserv-form-buttons {
+        width: 90%;
+    }
+    .reserv-form-buttons input {
+        font-size: 1em;
+        width: 6em;
     }
 }

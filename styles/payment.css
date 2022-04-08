@@ -99,3 +99,12 @@
 .payment-buttons input[type="button"]:hover {
     background-color: var(--button-cancel-color-hover);
 }
+
+@media (max-width: 550px) {
+    .payment-form {
+        width: 90%;
+    }
+    .payment-title {
+        font-size: 1.6em;
+    }
+}

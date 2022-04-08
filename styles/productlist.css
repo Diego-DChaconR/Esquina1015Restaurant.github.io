@@ -64,7 +64,7 @@
     background-color: var(--button-submit-color);
     border-radius: 5px;
     border: 1px solid white;
-    font-size: 0.8em;
+    font-size: 0.85em;
     padding: var(--padding-button-sUP);
     transition: background-color ease 300ms;
 }
@@ -78,7 +78,7 @@
     background-color: var(--button-cancel-color);
     border-radius: 5px;
     border: 1px solid white;
-    font-size: 0.8em;
+    font-size: 0.85em;
     padding: var(--padding-button-sUP);
     transition: background-color ease 300ms;
 }
@@ -87,9 +87,16 @@
     background-color: var(--button-cancel-color-hover);
 }
 
+@media (max-width: 550px) {
+    .product-list div,
+    .price {
+        font-size: 0.8em;
+    }
+}
+
 @media (max-width: 960px) {
     .product-list-container {
-        width: calc(var(--container-width) + 20%);
+        width: calc(var(--container-width) + 30%);
     }
 }
 
