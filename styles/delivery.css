@@ -147,6 +147,10 @@
     .message p {
         font-size: 1em;
     }
+    #payment-button {
+        width: 70%;
+        padding: 0.4em;
+    }
 }
 
 @media (min-width: 550px) and (max-width: 930px) {
