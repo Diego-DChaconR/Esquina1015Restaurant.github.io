@@ -165,4 +165,6 @@ function modifyMenu() {
     loginButtons[2].addEventListener("click", controlLoginForm);
 }
 
-modifyMenu();
+document.addEventListener("DOMContentLoaded", function() {
+    modifyMenu();
+});

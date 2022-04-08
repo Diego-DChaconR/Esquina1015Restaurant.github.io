@@ -15,7 +15,7 @@
 
 .delivery-container {
     background-color: whitesmoke;
-    margin: auto;
+    margin: 2% auto;
     width: var(--container-width);
     height: var(--container-height);
     border-radius: var(--delivery-border-rad);
@@ -141,35 +141,35 @@
 }
 
 @media (max-width: 930px) {
-
     .delivery-form {
         justify-content: flex-start;
         height: calc(var(--delivery-height) * 1.5);
     }
-
     .delivery-form input {
         margin-bottom: 1em;
     }
-
     .special-info {
         flex-direction: column;
     }
-
-    .special-info input, .payment {
+    .special-info input,
+    .payment {
         width: 100%;
     }
-
     .message {
         width: 60%;
     }
-
     .message p {
         margin: 6%;
         font-size: 1.1em;
     }
-
     #payment-button {
         width: 100%;
         padding: 0.4em;
+    }
+}
+
+@media (min-width: 1400px) {
+    .delivery-container {
+        width: 50%;
     }
 }

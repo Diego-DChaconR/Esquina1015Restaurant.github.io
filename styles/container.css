@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
-
 :root {
     --title-container-color: #E8FF02;
     --text-container-color: #FFFFBA;
-    --images-shadow: 3px 3px 10px rgba(0,0,0,.5);
+    --images-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
     --opinion-card-background-color: #000000;
     --opinion-card-width: 24em;
     --opinion-border-radius: 7px;
@@ -14,7 +13,7 @@
 
 #Princ-img {
     display: block;
-    animation: imganimation  3s;
+    animation: imganimation 3s;
     margin: 0 auto;
     box-shadow: var(--images-shadow);
     width: 45%;
@@ -22,9 +21,9 @@
 }
 
 .date-fund {
-    margin: 2% 0;
+    margin: 5%;
     color: var(--title-container-color);
-    font-family: 'Fredoka', sans-serif;;
+    font-family: 'Fredoka', sans-serif;
     font-size: 2em;
     text-align: center;
 }
@@ -103,7 +102,7 @@
 }
 
 @keyframes imganimation {
-    0%{
+    0% {
         border-radius: 0;
         margin: 5% auto;
     }
@@ -117,23 +116,23 @@
 }
 
 @media(min-width: 960px) {
+    .date-fund {
+        margin: 2% 0;
+    }
     .opinion-card-img {
         overflow: hidden;
         border-radius: calc(var(--opinion-border-radius) * 25);
         width: 8em;
     }
-
     .opinion-card-info {
         width: 50%;
     }
-
     .opinion-card-title {
         margin: 0;
         text-align: right;
         color: var(--letters-color);
         font-size: 1.2em;
     }
-
     .opinion-card-op {
         color: whitesmoke;
         font-family: Poppins, sans-serif;
@@ -141,4 +140,3 @@
         text-align: justify;
     }
 }
-

@@ -1,6 +1,6 @@
 function controlShowMessage() {
     var messageContainer = document.getElementsByClassName("message-container")
-    if(messageContainer[0].style.display != "none") {
+    if (messageContainer[0].style.display != "none") {
         messageContainer[0].style.display = "none";
     } else {
         messageContainer[0].style.display = "flex";
@@ -8,20 +8,20 @@ function controlShowMessage() {
 }
 
 function controlPaymentForm() {
-    var paymentContainer = document.getElementsByClassName("payment-container");
-    if(paymentContainer[0].style.display != "none") {
-        paymentContainer[0].style.display = "none";
+    var paymentContainer = document.getElementById("payment-container");
+    if (paymentContainer.style.display != "none") {
+        paymentContainer.style.display = "none";
     } else {
-        paymentContainer[0].style.display = "flex";
+        paymentContainer.style.display = "flex";
     }
 }
 
 function controlPayment() {
     var Payment = document.getElementById("payment-button");
-    var paymentButton =  document.getElementsByClassName("payment-button");
+    var paymentButton = document.getElementsByClassName("payment-button");
     var sendConfirm = document.getElementById("button-confirm");
     var cleanMessage = document.getElementsByClassName("message-container");
-    
+
     controlPaymentForm();
     controlShowMessage();
 

@@ -14,7 +14,7 @@
 
 .product-list-container {
     background-color: whitesmoke;
-    margin: auto;
+    margin: 2% auto;
     width: var(--container-width);
     height: var(--container-height);
     border-radius: 10px;
@@ -87,8 +87,14 @@
     background-color: var(--button-cancel-color-hover);
 }
 
-@media (max-width: 930px) {
+@media (max-width: 960px) {
     .product-list-container {
         width: calc(var(--container-width) + 20%);
+    }
+}
+
+@media (min-width: 1300px) {
+    .product-list-container {
+        width: 50%;
     }
 }
