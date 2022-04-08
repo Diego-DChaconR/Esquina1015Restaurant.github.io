@@ -2,12 +2,16 @@
     --sliding-menu-bar-width: 70vh;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .sliding-menu-container {
     background: rgba(0, 0, 0, 0.95);
     position: fixed;
     z-index: 2;
     width: 40%;
-    height: 100vh;
+    height: 100%;
     top: 1;
     bottom: 0;
     right: 0;
@@ -76,7 +80,8 @@
     align-items: center;
 }
 
-.sub-nav-list li {
+.sub-nav-list li,
+.sub-nav-list a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -84,7 +89,7 @@
     align-items: center;
 }
 
-.sub-nav-list li:hover {
+.sub-nav-list a:hover {
     color: var(--secondary-color);
     background-color: var(--letters-color);
     width: 100%;

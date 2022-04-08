@@ -1,8 +1,8 @@
 :root {
     --reserv-form-input-width: 70%;
     --reserv-form-border-radius: 8px;
-    --reserv-form-width: 30em;
-    --reserv-form-height: 30em;
+    --reserv-form-width: 28em;
+    --reserv-form-height: 28em;
     --button-submit-color: #2BCA00;
     --button-submit-color-hover: #007E13;
     --button-cancel-color: #FF0049;
@@ -100,4 +100,27 @@ legend {
 
 .reserv-form-buttons input[type="button"]:hover {
     background-color: var(--button-cancel-color-hover);
+}
+
+@media (max-width: 500px) {
+    .reservation-form {
+        width: 80%;
+        height: var(--reserv-form-height);
+    }
+    .branches-form {
+        width: 80%;
+    }
+    .special-info-form {
+        flex-direction: column;
+        font-size: 0.8em;
+        height: 7em;
+    }
+    .persons-form,
+    .schedules-form {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .persons-form input {
+        width: calc(var(--reserv-form-input-width) - 45%);
+    }
 }

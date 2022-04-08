@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1em;
 }
 
 .product-info,
@@ -56,6 +57,9 @@
 }
 
 @media (max-width: 930px) {
+    .products-controller {
+        font-size: 80%;
+    }
     .product-description {
         width: 50%;
     }
@@ -66,5 +70,11 @@
     .delete-product,
     .delete-title {
         width: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    .products-controller {
+        font-size: 55%;
     }
 }

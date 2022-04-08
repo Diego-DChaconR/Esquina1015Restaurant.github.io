@@ -1,5 +1,5 @@
 :root {
-    --contact-container-margin: 5%;
+    --contact-container-margin: 3%;
     --button-submit-color: #2BCA00;
     --button-submit-color-hover: #007E13;
     --button-reset-color: #FF0049;
@@ -17,14 +17,15 @@
 
 .contact-container-desc {
     text-align: center;
-    margin: var(--contact-container-margin) calc(var(--contact-container-margin) * 3);
-    font-size: 1.1em;
+    margin: calc(var(--contact-container-margin) * 2) calc(var(--contact-container-margin) * 3);
+    font-size: 1em;
     font-family: Poppins, sans-serif;
     color: white;
 }
 
 .social-medias {
     margin: auto;
+    margin-bottom: 7%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -40,7 +41,7 @@
 }
 
 .social-medias-img {
-    width: 3em;
+    width: 2em;
 }
 
 .comment-form {
@@ -49,10 +50,11 @@
     box-shadow: var(--comment-form-shadow);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 20px;
-    width: 50%;
+    width: 80%;
+    height: 60%;
     margin: 0 auto;
     padding: 2%;
 }
@@ -93,7 +95,6 @@
     border: 1px solid white;
     font-size: 0.8em;
     padding: var(--padding-button);
-    transition: background-color ease 200ms;
 }
 
 .comment-form input[type="submit"]:hover {
@@ -106,7 +107,6 @@
     border: 1px solid white;
     font-size: 0.8em;
     padding: var(--padding-button);
-    transition: background-color ease 200ms;
 }
 
 .comment-form input[type="reset"]:hover {
@@ -132,10 +132,46 @@ h1 {
     border-bottom: 1px solid var(--letters-color);
 }
 
+@media(max-width: 550px) {
+     :root {
+        --tamOpinion: 80%;
+        --tamFont: 0.75em;
+    }
+    .comment-title {
+        color: var(--comment-form-shadow-color);
+        font-size: 1.2em;
+    }
+    .comment-form {
+        width: var(--tamOpinion);
+        height: calc(var(--tamOpinion) - 20%);
+    }
+    .comment-form-buttons {
+        width: var(--tamOpinion);
+    }
+    .comment-form input[type="submit"] {
+        font-size: var(--tamFont);
+    }
+    .comment-form input[type="reset"] {
+        font-size: var(--tamFont);
+    }
+}
+
 @media(min-width: 960px) {
     h1 {
         font-size: 1.7em;
         width: 30%;
+    }
+    .contact-container-desc {
+        text-align: center;
+        margin: var(--contact-container-margin) calc(var(--contact-container-margin) * 3);
+        font-size: 1.3em;
+    }
+    .social-medias-img {
+        width: 3em;
+    }
+    .comment-form {
+        width: 50%;
+        height: 70%;
     }
 }
 

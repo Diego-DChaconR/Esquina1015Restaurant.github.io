@@ -50,9 +50,11 @@
 .signUp-personal-info {
     display: flex;
     gap: 0 2em;
+    width: 80%;
 }
 
-.signUp input[type="email"], .signUp input[type="text"]{
+.signUp input[type="email"],
+.signUp input[type="text"] {
     width: 70%;
     padding: var(--padding-button-sUP);
 }
@@ -83,4 +85,10 @@
 
 .signUp input[type="button"]:hover {
     background-color: var(--button-cancel-color-hover);
+}
+
+@media (max-width: 550px) {
+    .signUp {
+        width: 90%;
+    }
 }
